@@ -4,10 +4,11 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "nodemon index.ts",
-		"start:inspect": "nodemon --inspect index.ts",
+		"start": "nodemon ./dist/index.js",
+		"start:inspect": "nodemon --inspect ./dist/index.js",
 		"test:unit": "node test",
-		"build": "tsc"
+		"build": "tsc",
+		"build:w": "tsc -w"
 	},
 	"repository": {
 		"type": "git",
